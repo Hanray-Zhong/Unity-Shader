@@ -1,23 +1,13 @@
-﻿Shader "Custom/TestShader"
+﻿Shader "Custom/Chapter_3/MyShader"
 {
+	// 属性，将会出现在材质面板中
     Properties
     {
-        // _Color ("Color", Color) = (1,1,1,1)
-        // _MainTex ("Albedo (RGB)", 2D) = "white" {}
-        // _Glossiness ("Smoothness", Range(0,1)) = 0.5
-        // _Metallic ("Metallic", Range(0,1)) = 0.0
-
-        // unmbers and sliders
-        _Int ("My_Int", Int) = 2
-        _Float ("My_Float", Float) = 1.5
-        _Range ("My_Range", Range(0.0, 5.0)) = 3.0
-        // colors and vectors
-        _Color ("My_Color", Color) = (1, 1, 1, 1)
-        _Vector ("My_Vector", Vector) = (2, 3, 4, 5)
-        // Textures
-        _2D ("My_2D", 2D) = " " {}
-        _Cube ("My_Cube", Cube) = "white" {}
-        _3D ("My_3D", 3D) = "Black" {}
+		// 设置默认值
+        _Color ("Color", Color) = (1,1,1,1)
+        _MainTex ("Albedo (RGB)", 2D) = "white" {}
+        _Glossiness ("Smoothness", Range(0,1)) = 0.5
+        _Metallic ("Metallic", Range(0,1)) = 0.0
     }
     SubShader
     {
